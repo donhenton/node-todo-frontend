@@ -7,6 +7,7 @@ RUN mkdir /app
 WORKDIR /app
 
 COPY package.json /app/
+RUN npm set strict-ssl false
 RUN npm install --only=production
 
 COPY src /app/src
