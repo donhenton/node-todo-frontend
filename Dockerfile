@@ -1,5 +1,5 @@
 FROM node
-
+ENV NODE_TLS_REJECT_UNAUTHORIZED=0
 RUN apt-get update && apt-get upgrade -y \
     && apt-get clean
 
